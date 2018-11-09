@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex, nofollow"  charset=UTF-8>
+
+    <title>Material design tab style - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    #asdf{width: 600px;
+      height: 100;}
+    .nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+input[type=submit]{
+        background:#006699;
+        color:#ffffff;
+}
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+body{ background: #EDECEC; padding:50px}    </style>
+    <script src="./jquery-1.11.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+  </head>
+  <body>
+    <div id = "asdf">
+    <div class="container">
+
+  <div class="row">
+                                    <div class="col-md-6">
+                                    <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class=""><a href="https://s.bootsnipp.com/iframe/b2eVW#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false">Avaliação</a></li>
+                                        <li role="presentation" class="active"><a href="https://s.bootsnipp.com/iframe/b2eVW#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="true">Home</a></li>
+                                        <li role="presentation" class=""><a href="https://s.bootsnipp.com/iframe/b2eVW#messages" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">Login</a></li>
+                                        
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane" id="home"><form action="contagem.php" method="post">
+            <p>
+                <input type="radio" name="band-rock" value="beatles"/>Verdadeira
+                <input type="radio" name="band-rock" value="led-zeppelin"/> Falsa
+            </p>
+            <p>
+                <input type="submit" value="Verificar" />
+            </p>
+        </form></div>
+                                        <div role="tabpanel" class="tab-pane active" id="profile">Votação : x/x </br> Avaliação Automática: x %</div>
+                                        <div role="tabpanel" class="tab-pane" id="messages"><form action="conversor.php" method="post">
+                                        Login: <input type="text" name="tipo_convert"><br>
+                                        Senha: <input type="text" name="uni_atual"><br>
+                                        <input type="submit" value="Enviar">
+                                        </form></div>
+                                        
+                                    </div>
+</div>
+                                </div>
+  </div>
+</div> </div> <script type="text/javascript">
+    </script></body>
+</html>
