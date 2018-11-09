@@ -1,13 +1,17 @@
 Programa: WJNV
+componentes:
+George
+Lucas
+Rafael
 
-Bibliotecas - licenÁas
+Bibliotecas - licen√ßas
 
-Bootstrap - licenÁa MIT 
-Extensions - Depende da licenÁa do propriet·rio
-Postgres - licenÁa similar ao MIT
-scikit-learn - licenÁa BSD
+Bootstrap - licen√ßa MIT 
+Extensions - Depende da licen√ßa do propriet√°rio
+Postgres - licen√ßa similar ao MIT
+scikit-learn - licen√ßa BSD
 
-Objetivo - Criar um recurso integrado ao navegador chrome para checagem e validaÁ„o de notÌcias.
+Objetivo - Criar um recurso integrado ao navegador chrome para checagem e valida√ß√£o de not√≠cias.
 
 link: https://drive.google.com/file/d/1m_GD9pWZk4JZ8gS8MUf7V5C7wSLnWvsk/view?usp=sharing
 
